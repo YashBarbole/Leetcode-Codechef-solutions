@@ -30,7 +30,7 @@ Node* convertArr2LL(vector<int> &arr){
     return head;
 
 }
-
+//length
 int lengthOfLL(Node*head){
     int cnt=0;
     Node* temp=head;
@@ -42,6 +42,17 @@ int lengthOfLL(Node*head){
 
 
 }
+int checkIfPresent(Node* head, int val)
+{
+    Node* temp=head;
+    while(temp){
+    if(temp->data==val){
+        return 1;
+    }
+    temp=temp->next;
+}
+return 0;
+}
 //traversal
 int main(){
     vector<int>arr={3,5,8,7};
@@ -50,9 +61,11 @@ int main(){
    while(temp){
     cout<< temp->data<<" ";
     temp=temp->next;
+
    }
+cout<<endl;
 
-   cout<<"length of LL is "<<lengthOfLL(head);
-
+cout<<"length of LL is "<<lengthOfLL(head)<<endl;;
+cout<<checkIfPresent(head,5);
   
 }
