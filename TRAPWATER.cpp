@@ -50,6 +50,6 @@ int main(){
     cout<<"the total water trapped is"<<res<<endl;
     return 0;
     
-
+//yash
     
 }
