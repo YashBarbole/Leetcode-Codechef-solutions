@@ -107,10 +107,55 @@ Node* deleteK(Node*head,int k){
 
 }
 
+void deleteNode(Node*temp){
+    Node*prev= temp->back;
+    Node*front=temp->next;
+
+    if(front==NULL){
+        prev->next=nullptr;
+        temp->back=nullptr;
+        free(temp);
+        return;
+    }
+    prev->next=front;
+    front->back=prev;
+
+    temp->next=nullptr;
+    temp->back=nullptr;
+    free(temp);
+
+    
+}
+Node * insertBeforeHead(Node*head,int val){
+    Node*newHead=new Node(val,head,nullptr);
+    head->back=newHead;
+
+    return newHead;
+
+}
+
+Node* insertBeforeTail(Node*head,int val){
+    if (head->next==NULL){
+        return insertBeforeHead(head,val);
+    }
+    
+    Node*tail=head;
+    while(tail->next!=NULL){
+        tail=tail->next;
+    }
+
+    Node*prev=tail->back;
+    Node*newNode=new Node(val,tail,prev);
+    prev->next=newNode;
+    tail->back=newNode;
+    return head;
+}
+
+
 int main(){
     vector <int> arr={12,5,8,7};
     Node*head=convertArr2Dll(arr);
-    head=deleteK(head,1);
+    deleteNode(head->next);
     print(head);
 
 
