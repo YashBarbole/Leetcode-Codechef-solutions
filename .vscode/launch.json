@@ -2,6 +2,41 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "iflese",
+      "request": "launch",
+      "mainClass": "iflese",
+      "projectName": "SOLUTIONS_1d8541de"
+    },
+    {
+      "type": "java",
+      "name": "inputs",
+      "request": "launch",
+      "mainClass": "inputs",
+      "projectName": "SOLUTIONS_1d8541de"
+    },
+    {
+      "type": "java",
+      "name": "vairables",
+      "request": "launch",
+      "mainClass": "vairables",
+      "projectName": "SOLUTIONS_1d8541de"
+    },
+    {
+      "type": "java",
+      "name": "yash",
+      "request": "launch",
+      "mainClass": "yash",
+      "projectName": "SOLUTIONS_1d8541de"
+    },
+    {
+      "type": "java",
+      "name": "yash",
+      "request": "launch",
+      "mainClass": "JAVA.yash",
+      "projectName": "SOLUTIONS_1d8541de"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
