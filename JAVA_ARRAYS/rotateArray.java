@@ -5,15 +5,13 @@ import java.util.Arrays;
 public class rotateArray {
     public static void main(String[] args) {
         int[] arr1 = {1, 2, 3, 4, 5, 6, 7};
-             int[] arr2 = {1, 2, 3, 4, 5, 6, 7};
+        int[] arr2 = {1, 2, 3, 4, 5, 6, 7};
         int k = 2;
 
         Leftrotate(arr1, k);
         System.out.println(Arrays.toString(arr1));
         rightRotate(arr2, k);
         System.out.println(Arrays.toString(arr2));
-       
-        
     }
 //left rotate
     public static void Leftrotate(int [] a,int d){
@@ -42,7 +40,5 @@ public class rotateArray {
             start++;
             end--;
         }
-    }
-
-    
+    }    
 }

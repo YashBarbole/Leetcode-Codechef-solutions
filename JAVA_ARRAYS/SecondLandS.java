@@ -26,7 +26,7 @@ public class SecondLandS {
         }
         return secLargest;
     }
-
+    
     public static int SecondSmallest(int[] arr) {
         int smallest = arr[0];
         int secSmallest = Integer.MAX_VALUE;
