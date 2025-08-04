@@ -43,7 +43,6 @@ public class KadaneTUF {
             System.out.print(a[i] + " ");
         }
         System.out.println();
-
         return maxi;
     }
 }
