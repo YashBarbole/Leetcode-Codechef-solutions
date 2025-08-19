@@ -2,15 +2,15 @@ package LinkedList;
 
 public class LL {
 
-private Node head;
+public Node head;
 private Node tail;
 private int size;
 public LL(){
     this.size=0;
 }
-private class Node{
-    private int value;
-    private Node next;
+public class Node{
+     int value;
+     Node next;
 
         public Node(int value){
         this.value=value;
@@ -135,6 +135,18 @@ public Node find (int value){
     }
     return null;
 }
+//reverse LL
+public  Node RevSLL(Node head){
+        Node prev=null;
+        Node curr=head;
+        while(curr!=null){
+            Node next=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+        }
+        return prev;
+    }
 
 
 

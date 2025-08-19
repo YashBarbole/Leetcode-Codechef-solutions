@@ -11,8 +11,12 @@ public class DLL {
         this.val=val;
     }
 }
+    public Node head;
+
+
+
 //insert first
-private Node head;
+
 
 public void insertFirst(int val){
     Node node = new Node(val);
@@ -106,6 +110,21 @@ public void InsertAfterValue (int after,int val){
        
 
 }
+//reverse DLL
+    public Node RevDLL(Node head){
+            if(head==null || head.next==null){
+                return head;
+            }
+            Node temp=null;
+            Node curr=head;
+            while(curr!=null){
+                temp=curr.prev;
+                curr.prev=curr.next;
+                curr.next=temp;
+                curr=curr.prev;
+            }
+            return temp.prev;
+    }
 
 
  
