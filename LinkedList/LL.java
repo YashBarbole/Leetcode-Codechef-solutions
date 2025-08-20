@@ -3,8 +3,8 @@ package LinkedList;
 public class LL {
 
 public Node head;
-private Node tail;
-private int size;
+public Node tail;
+public int size;
 public LL(){
     this.size=0;
 }
@@ -87,6 +87,8 @@ if(head==null){
 size--;
 return value;
 }
+
+
 //value of node
 public Node gett(int index){
 Node node= head;
@@ -147,9 +149,30 @@ public  Node RevSLL(Node head){
         }
         return prev;
     }
+//find middle
+    public Node FindMiddle(Node head){
+            Node slow=head;
+            Node fast=head;
 
+            while(fast!=null && fast.next!=null){
+                slow=slow.next;
+                fast=fast.next.next;
+            }
+            return slow;
+    }
+//cycle
 
-
-
+         public boolean hasCycle(Node head) {
+    Node slow=head;
+    Node fast=head;
+        while(fast!=null&& fast.next!=null){
+            slow=slow.next;
+            fast=fast.next.next;
+            if(slow==fast){
+                return true;
+            }
+        }
+        return false;
+    }
 
 }
