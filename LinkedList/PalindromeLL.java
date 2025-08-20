@@ -25,15 +25,10 @@ public class PalindromeLL extends LL{
         while(temp!=null){
             if(temp.value!=stack.pop()){return false;}
                 temp=temp.next;
-              
-            
         }
         return true;
 
         
    }
-
-
-
 
 }

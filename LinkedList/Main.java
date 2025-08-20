@@ -12,13 +12,15 @@ public class Main {
        list.insertFirst(17);   
        list.InsertAtIndex(20,2 ); 
         list.Print();
-       
+    
         list.head = list.RevSLL(list.head); 
         list.Print();
 
      
 System.out.println();
 System.out.println("DOUBLE LL");
+
+System.out.println(list.hasCycle(list.head));
         
         DLL list2 = new DLL();
         list2.insertFirst(3);
@@ -29,6 +31,10 @@ System.out.println("DOUBLE LL");
       list2.PrintDLL();
       list2.head=list2.RevDLL(list2.head);
       list2.PrintDLL();
+
+      System.out.println();
+    LL.Node mid = list.FindMiddle(list.head);
+      System.out.println(mid.value);
         
         
     }
