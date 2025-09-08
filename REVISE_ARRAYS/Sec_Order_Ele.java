@@ -1,4 +1,4 @@
-package REVISE_ARRAYS;
+
 
 public class Sec_Order_Ele {
     public static void main(String[] args) {
