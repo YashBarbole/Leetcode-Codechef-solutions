@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class SubarrayWithSumK {
+public class SubarrayWithSumKMOSTIMP {
     public static void main(String[] args) {
         int[] arr = {1, 3, 4, 5};
         int sum = 7;
