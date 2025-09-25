@@ -20,4 +20,25 @@ public class LongestSubarrWithSumLessthanK {
         }
         return maxlen;
     }
+
+    public static int LongestSubarrSLIDINGWINDOW(int arr[],int k){
+        int sum=0;
+        int l=0;
+        int r=0;
+        int maxlen=0;
+        int n=arr.length;
+
+        while(r<n){
+            sum=sum+arr[r];
+            while(sum>k){
+                sum=sum-arr[l];
+                l=l+1;
+            }
+            if(sum<=k){
+                maxlen=Math.max(maxlen, r-l+1);
+                r=r+1;
+            }
+        }
+        return maxlen;
+    }
 }
