@@ -19,7 +19,6 @@ public class ARRANGE_ELEMENTS_SIGN {
             else{
                 neg.add(arr[i]);
             }
-
         }
 
         for (int i = 0; i < pos.size(); i++) {
@@ -29,6 +28,6 @@ public class ARRANGE_ELEMENTS_SIGN {
     } 
 
     public static void REARRANG_OPTIMAL(int arr[]){
-        
+
     }
 }
