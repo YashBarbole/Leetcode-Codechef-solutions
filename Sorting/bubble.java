@@ -1,5 +1,5 @@
 package Sorting;
-
+//adjacent swapping 
 import java.util.Arrays;
 
 public class bubble {
