@@ -33,6 +33,21 @@ public class NEXT_PERMUTATION {
         return A;
     }
 
+    // public static int [] NEXTPERMUTATION(int arr[]){
+    //     int n= arr.length;
+    //     int index=-1;
+    //     for(int i=n-2;i>=0;i--){
+    //         if(arr[i]<arr[i+1]){
+    //             index=i;
+    //             break;
+    //         }
+    //     }
+
+    //     for(int i=n-1;i>=0;i--){
+
+    //     }
+    // }
+
     // Swap helper
     private static void swap(int[] A, int i, int j) {
         int temp = A[i];

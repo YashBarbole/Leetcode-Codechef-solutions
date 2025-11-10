@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import corejava.swap;
 
-//select minimums and swap
+//select minimums of the whole and swap
 public class selection {
     public static void main(String[] args) {
         int[] arr = {64, 25, 12, 22, 11};
@@ -17,7 +17,7 @@ public class selection {
        for(int i=0;i<n-2;i++){
         int mini=i;
         for(int j=i;j<n-1;j++){
-            if(arr[mini]<arr[j]){
+            if(arr[mini]>arr[j]){
                 Swap(arr,mini,j);
             }
         }

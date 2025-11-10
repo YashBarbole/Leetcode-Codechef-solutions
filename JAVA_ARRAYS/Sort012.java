@@ -7,7 +7,6 @@ public class Sort012 {
         int arr[]={0,2,1,2,2,0,1};
         Sort012(arr);
         System.out.println(Arrays.toString(arr));
-    
     }
     public static void Sort012(int[]a){
         int n=a.length;

@@ -1,8 +1,7 @@
-package TREES_REVISE;
+package LinkedList;
 
-public class Balanced_Binary_tree {
+public class Main2 {
     public static void main(String[] args) {
         
     }
-    
 }

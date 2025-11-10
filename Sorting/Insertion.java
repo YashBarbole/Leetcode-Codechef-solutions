@@ -1,7 +1,12 @@
 package Sorting;
 
 import java.util.Arrays;
-
+//takes elemetn and places in correct position wiht increasing array size
+// Time Complexity
+// Case	Time
+// Best Case	O(n) (if array already sorted)
+// Average Case	O(n²)
+// Worst Case	O(n²)
 public class Insertion {
     public static void main(String[] args) {
         int[] arr = {64, 25, 12, 22, 11};
