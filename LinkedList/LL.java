@@ -8,7 +8,7 @@ public int size;
 public LL(){
     this.size=0;
 }
-public class Node{
+public static class Node{
      int value;
      Node next;
 

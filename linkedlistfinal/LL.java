@@ -30,5 +30,33 @@ public class LL {
         }
         size+=1;
     }
+
+    public void InsertLast(int val){
+    if(tail==null){
+        InsertFirst(val);
+        return;
+    }
+    Node node= new Node(val);
+    tail.next= node;
+    tail=node;
+    size++;
 }
 
+    public void InsertAtPos(int val,int index){
+            if(index==0){
+                 InsertFirst(val);
+                 return;
+                }
+        
+            if(index==size){
+                InsertLast(val);
+                return;
+            }
+
+            
+    
+    
+
+}
+    }
+        
