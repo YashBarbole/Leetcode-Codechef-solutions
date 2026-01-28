@@ -2,32 +2,34 @@ package Sorting;
 
 import java.util.Arrays;
 
-import corejava.swap;
-
-//select minimums of the whole and swap
 public class selection {
+
     public static void main(String[] args) {
         int[] arr = {64, 25, 12, 22, 11};
-        SelectionSort(arr);
+        selectionSort(arr);
         System.out.println(Arrays.toString(arr));
-        
-    }
-    public static void SelectionSort(int [] arr){
-        int n=arr.length;
-       for(int i=0;i<n-2;i++){
-        int mini=i;
-        for(int j=i;j<n-1;j++){
-            if(arr[mini]>arr[j]){
-                Swap(arr,mini,j);
-            }
-        }
-       }
     }
 
-    public static void Swap(int []arr,int a,int b){
-        int temp= arr[a];
-        arr[a]=arr[b];
-        arr[b]=temp;
+    public static void selectionSort(int[] arr) {
+        int n = arr.length;
+
+        for (int i = 0; i < n - 1; i++) {
+            int minIndex = i;
+
+            for (int j = i + 1; j < n; j++) {
+                if (arr[j] < arr[minIndex]) {
+                    minIndex = j;
+                }
+            }
+
+            // swap AFTER finding min
+            swap(arr, i, minIndex);
+        }
     }
-    
+
+    public static void swap(int[] arr, int a, int b) {
+        int temp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = temp;
+    }
 }
